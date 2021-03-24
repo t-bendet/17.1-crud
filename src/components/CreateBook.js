@@ -1,20 +1,21 @@
 import React from 'react';
+import MockApi from '../apis/MockApi'
 
 
 class CreateBook extends React.Component {
   state={name:"",rating:""}
-  addBook = (e)=>{
+  addBook = async(e)=>{
     e.preventDefault()
-    console.log(this.state);
+    await MockApi.post("/books", {bookName:this.state.name,bookRating:this.state.rating});
+    alert("book saved")
   }
+  
   render(){
     return (
-      <form onSubmit={this.addBook}>
-        <label>book :</label>
-        <input type="text" value={this.state.name} onChange={(e)=>{this.setState({name:e.target.value})}} ></input>
-        <label>rating</label>
-        <input type="number" value={this.state.rating} onChange={(e)=>{this.setState({rating:e.target.value})}} ></input>
-        <button type="submit" >Submit</button>
+      <form onSubmit={this.addBook} >
+        <input type="text" placeholder="book name" value={this.state.name} onChange={(e)=>{this.setState({name:e.target.value})}}></input>
+        <input type="text" placeholder="book rating" value={this.state.rating} onChange={(e)=>{this.setState({rating:e.target.value})}} ></input>
+        <button type="submit">submit</button>
       </form>
     )
   }

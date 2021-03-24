@@ -26,22 +26,18 @@
 
 #### Update
 
-- [ ] get the id of this specific book specific user data
-- [ ] display editable ui with confirm/cancel
-- [ ] if confirm update data and card
-- [ ] add form validation 
+- [x] get the id of this specific book specific user data
+- [x] display editable ui with confirm/cancel
 
 #### Delete
 
-- [ ] get an specific user data
-- [ ] display data and "are you sure?" msg
-- [ ] delete and confirm(disable btn untill confirmation)
+- [x] get an specific user data
+- [x] display data and "are you sure?" msg
+- [x] delete and confirm(disable btn untill confirmation)
 
 
 ## Add a Review page
 
 #### create
 
-- [ ] form component to get user data
-- [ ] form validation return true/false 
-- [ ] post to api and return success(disable btn and show msg while posting) 
+- [x] form component to get user data
