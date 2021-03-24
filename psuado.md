@@ -1,42 +1,47 @@
 ## Reasearch
 
-- [ ] http methodes
-- [ ] mock api
-- [ ] axios
+- [x] http methodes
+- [x] mock api
+- [x] axios
 
 ## pre-work
 
-- [ ] create an mock api 
-- [ ] create an axios base url file
-- [ ] create random data
-- [ ] fetch and store data on mount
+- [x] create an mock api 
+- [x] create an axios base url file
+- [x] create random data
+- [x] fetch and store data on mount
 
-## components
 
-### landing page
+## landing page
 
-- [ ] homepage component
-- [ ] browser router for all components
+- [x] homepage component
+- [x] browser router for all components
 
-### Create
+## Books List page
 
-- [ ] form component to get user data
-- [ ] form validation return true/false 
-- [ ] post to api and return success(disable btn and show msg while posting) 
+#### get 
 
-### Update
+- [x] bookCard component
+- [x] print all books to screen
 
-- [ ] get an specific user data
-- [ ] display data in a form
-- [ ] form validation and post (same as create?)
+#### Update
 
-### Delete
+- [ ] get the id of this specific book specific user data
+- [ ] display editable ui with confirm/cancel
+- [ ] if confirm update data and card
+- [ ] add form validation 
+
+#### Delete
 
 - [ ] get an specific user data
 - [ ] display data and "are you sure?" msg
 - [ ] delete and confirm(disable btn untill confirmation)
 
-### Read?
 
-- [ ] ?
+## Add a Review page
 
+#### create
+
+- [ ] form component to get user data
+- [ ] form validation return true/false 
+- [ ] post to api and return success(disable btn and show msg while posting) 
